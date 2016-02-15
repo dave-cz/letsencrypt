@@ -53,7 +53,7 @@ BootstrapDebCommon() {
 
               $SUDO sh -c "echo $BACKPORT_SOURCELINE >> /etc/apt/sources.list.d/$BACKPORT_NAME.list"
               $SUDO apt-get update
-          if
+          fi
       fi
       $SUDO apt-get install -y --no-install-recommends -t "$BACKPORT_NAME" $augeas_pkg
       augeas_pkg=
